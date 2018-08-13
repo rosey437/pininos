@@ -1,0 +1,52 @@
+
+
+Enviroment About Angular:
+
+
+  Bases:
+    -Typesrcipt
+    -NPM
+    -Git
+    -Treesource
+    
+  Angular Project:
+    -Structure
+    -Debug
+    -Test
+    -publish
+    
+    Angular Environment:
+    - Angular
+    - Webpack
+    - Angular CLI
+    - Treeshaking
+         + Test:
+           - Jasmin
+           - Run tests performance
+           - Coverage unit tes
+           - Mocks
+           
+           
+    + Source:
+      - Git
+      - Treesource
+     
+     
+    + Publish 
+      - Publish code in Git
+      - Tree shaking 
+      - Debuging on Prod
+      
+     + Degug and performance:
+       - Chrome (add-in)
+        
+       
+       
+     
+      
+      
+    
+    
+           
+    
+    
