@@ -1,0 +1,34 @@
+
+
+
+Register Module(any role):
+            - Register person
+            - Upload docs
+            - validate docs.
+            - azure service docs.
+            
+Validation Module (admin, operator role):
+             - view docs
+             - validate data
+             - aprobe registration
+             
+Ticket Module (admin, operator person):
+            - new register ticket
+            - update service
+            
+Report Module:
+            - People 
+            
+            
+  services:
+     data 
+     docs
+     payment
+     report
+     security      
+     
+     azure:
+         - bus
+         - trigger
+         - cache memory
+         -  AI reviwer
