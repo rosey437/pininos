@@ -3,6 +3,10 @@
 
 Register Module(any role):
             - Register person
+                        - register by role
+                        -address 
+                        -person name
+                        -credit card (every user registered has cost)
             - Upload docs
             - validate docs.
             - azure service docs.
@@ -17,18 +21,18 @@ Ticket Module (admin, operator person):
             - update service
             
 Report Module:
-            - People 
-            
+            - ergistered People 
+            -sales
             
   services:
-     data 
-     docs
-     payment
-     report
-     security      
+     -data 
+     -docs
+     -payment
+     -report
+     -security      
      
      azure:
          - bus
          - trigger
          - cache memory
-         -  AI reviwer
+         -  AI doc reviwer
