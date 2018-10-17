@@ -1,7 +1,4 @@
-
-
 Enviroment About Angular:
-
 
   Bases:
     -Typesrcipt
@@ -14,26 +11,29 @@ Enviroment About Angular:
     -Debug
     -Test
     -publish
+    -packages
+    -modules
     
     Angular Environment:
     - Angular
     - Webpack
     - Angular CLI
     - Treeshaking
-         + Test:
+     - Test:
            - Jasmin
            - Run tests performance
-           - Coverage unit tes
+           - Coverage unit test (eg. istambul package)
            - Mocks
            
-           
+      - Testing
+      
     + Source:
       - Git
       - Treesource
      
      
     + Publish 
-      - Publish code in Git
+      - Publish code in Git (incremental publishing)
       - Tree shaking 
       - Debuging on Prod
       
