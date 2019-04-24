@@ -1,0 +1,10 @@
+
+Redux 
+ + Store and change logic are separated
+ + One store
+ + Single store with hierarchical reducers
+ + No dispatcher
+ + Container components utilize connect
+ + State is immutable
+ 
+ 
