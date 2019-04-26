@@ -18,8 +18,11 @@ Enviroment About Angular:
     - Angular
     - Webpack
     - Angular CLI
+    -REdux
+     
     - Treeshaking
      - Test:
+           -Mock API
            - Jasmin
            - Run tests performance
            - Coverage unit test (eg. istambul package)
