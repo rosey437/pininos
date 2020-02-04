@@ -1,0 +1,46 @@
+
+ function createItemsTable(data) {
+
+    tbl = document.getElementById('tblItems');
+    tbl.innerHTML = "";
+    addHeaders(tbl, ['ITEM ID', 'NAME', 'PRICE']);
+
+    $(data).each(function (index, value) {
+        addRow(tbl, value.OrderItemId, value.Name, value.Price);
+    }
+
+    );
+
+}
+
+function addHeaders(tbl, headers) {
+    var tr = document.createElement('tr');
+
+    headers.forEach(function setHeaders(title) {
+        var th = document.createElement('th');
+        th.innerHTML = title;
+        tr.appendChild(th);
+    });
+
+    tbl.appendChild(tr);
+}
+
+function addCell(tr, val) {
+    var td = document.createElement('td');
+
+    td.innerHTML = val;
+
+    tr.appendChild(td)
+}
+
+
+
+function addRow(tbl, val_1, val_2, val_3) {
+    var tr = document.createElement('tr');
+
+    addCell(tr, val_1);
+    addCell(tr, val_2);
+    addCell(tr, val_3);
+
+    tbl.appendChild(tr)
+}
