@@ -1,0 +1,40 @@
+  static void enviarCorreoConLogo() 
+        {
+            var logoPath = @"C:\Users\miguel.zarate\source\repos\Consumer\shake.jpg";
+            try
+            {
+                string deDireccionOrigen = "misic437@gmail.com";
+
+                MailMessage message = new MailMessage();
+
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new System.Net.NetworkCredential()
+                {
+                    UserName = deDireccionOrigen,
+                    Password = "secret"
+                };
+
+                smtpClient.EnableSsl = true;
+
+                message.From = new MailAddress(deDireccionOrigen);
+                message.To.Add(new MailAddress("rosey437@gmail.com"));
+                message.Subject = "Solicidud de Tramite";
+                message.IsBodyHtml = true;
+                string msg = String.Format(
+              "<h3>Client:  Mike Has Sent You A Screenshot</h3>" +
+              @"<img src=""cid:{0}"" />", "companyLogo");
+                // message.Body =CreateHtmlMessage(msg,logoPath);
+                message.AlternateViews.Add(CreateHtmlMessage(msg,logoPath));
+
+
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtpClient.Send(message);
+
+            }
+            catch (Exception ex) 
+            {
+                var ex1 = ex;
+            }
+
+            }
